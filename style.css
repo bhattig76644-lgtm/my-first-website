@@ -1,0 +1,109 @@
+body {
+    background-color: #f0f8ff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    color: blue;
+    font-size: 40px;
+}
+
+h2 {
+    color: green;
+}
+
+p {
+    color: #333333;
+    font-size: 20px;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+nav {
+    background-color: navy;
+    padding: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 18px;
+}
+
+section {
+    padding: 40px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 10px;
+    body {
+    margin: 0;
+    padding: 0;
+    background-color: #f1f5f9;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #14213d;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+}
+
+section {
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+h1 {
+    color: #14213d;
+    font-size: 38px;
+}
+
+h2 {
+    color: #0077b6;
+}
+
+p {
+    color: #444;
+    font-size: 18px;
+}
+
+.skill-card {
+    display: inline-block;
+    background-color: #e0f2fe;
+    padding: 18px;
+    margin: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}.whatsapp-btn {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.whatsapp-btn:hover {
+    background-color: #128C7E;
+}
