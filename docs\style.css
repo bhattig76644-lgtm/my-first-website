@@ -102,6 +102,37 @@ p {
     border-radius: 8px;
     font-weight: bold;
     margin-top: 15px;
+}/* Mobile Responsive Design */
+
+@media (max-width: 600px) {
+
+    nav {
+        padding: 15px 5px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+        font-size: 15px;
+    }
+
+    section {
+        padding: 25px 15px;
+        margin: 12px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .skill-card {
+        display: block;
+        margin: 10px 0;
+    }
 }
 
 .whatsapp-btn:hover {
