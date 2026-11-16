@@ -1,155 +1,266 @@
+/* SAFDAR HUSSAIN - PROFESSIONAL WEBSITE */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --navy: #071b35;
+  --blue: #123d68;
+  --gold: #e5b94b;
+  --white: #ffffff;
+  --light: #f3f6fa;
+  --text: #263449;
+}
+
 body {
-    background-color: #f0f8ff;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 50px;
+  font-family: Arial, sans-serif;
+  background: var(--light);
+  color: var(--text);
+  line-height: 1.7;
 }
 
-h1 {
-    color: blue;
-    font-size: 40px;
+/* HEADER */
+
+header {
+  background: var(--navy);
+  color: white;
+  padding: 18px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
-h2 {
-    color: green;
+.logo {
+  font-size: 23px;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
-p {
-    color: #333333;
-    font-size: 20px;
-}
-
-button {
-    background-color: blue;
-    color: white;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-}
-nav {
-    background-color: navy;
-    padding: 20px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 15px;
-    font-size: 18px;
-}
-
-section {
-    padding: 40px;
-    margin: 20px;
-    background-color: white;
-    border-radius: 10px;
-    body {
-    margin: 0;
-    padding: 0;
-    background-color: #f1f5f9;
-    font-family: Arial, sans-serif;
+.logo span {
+  color: var(--gold);
+  margin-left: 5px;
 }
 
 nav {
-    background-color: #14213d;
-    padding: 20px;
-    text-align: center;
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
-    margin: 15px;
-    font-weight: bold;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  transition: 0.3s;
 }
+
+nav a:hover {
+  color: var(--gold);
+}
+
+#langBtn {
+  padding: 8px 14px;
+  background: var(--gold);
+  color: var(--navy);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* HERO SECTION */
+
+.hero {
+  min-height: 480px;
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
+  background: linear-gradient(135deg, #071b35, #164c7b);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tagline {
+  color: var(--gold);
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero h2 {
+  font-size: 23px;
+  margin-bottom: 15px;
+  color: var(--gold);
+}
+
+.hero p {
+  margin-bottom: 20px;
+}
+
+/* BUTTONS */
+
+.btn {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--navy);
+  padding: 12px 28px;
+  border-radius: 7px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: white;
+  transform: translateY(-3px);
+}
+
+/* GENERAL SECTIONS */
 
 section {
-    padding: 40px 20px;
-    margin: 20px auto;
-    max-width: 900px;
-    background-color: white;
-    border-radius: 12px;
+  padding: 65px 8%;
+  text-align: center;
 }
 
-h1 {
-    color: #14213d;
-    font-size: 38px;
+section h2 {
+  color: var(--navy);
+  font-size: 32px;
+  margin-bottom: 25px;
 }
 
-h2 {
-    color: #0077b6;
+section > p {
+  max-width: 750px;
+  margin: 10px auto;
 }
 
-p {
-    color: #444;
+/* SERVICES */
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin-top: 35px;
+}
+
+.service-card {
+  background: white;
+  padding: 30px 22px;
+  border-radius: 14px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+  border-bottom: 4px solid var(--gold);
+  transition: 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+.service-card h3 {
+  color: var(--navy);
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.service-card p {
+  margin-bottom: 15px;
+}
+
+.service-card a {
+  color: #164c7b;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* SHOP */
+
+#shop {
+  background: #e8eef5;
+}
+
+/* CONTACT */
+
+#contact {
+  background: white;
+}
+
+#contact .btn {
+  margin-top: 15px;
+}
+
+/* FOOTER */
+
+footer {
+  background: var(--navy);
+  color: white;
+  text-align: center;
+  padding: 25px 15px;
+}
+
+footer p {
+  margin: 5px;
+  font-size: 14px;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 768px) {
+
+  header {
+    justify-content: center;
+    text-align: center;
+  }
+
+  nav {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  nav a {
+    font-size: 13px;
+  }
+
+  .hero {
+    min-height: 400px;
+    padding: 65px 15px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero h2 {
     font-size: 18px;
-}
+  }
 
-.skill-card {
-    display: inline-block;
-    background-color: #e0f2fe;
-    padding: 18px;
-    margin: 10px;
-    border-radius: 10px;
-    font-weight: bold;
-}.whatsapp-btn {
-    display: inline-block;
-    background-color: #25D366;
-    color: white;
-    padding: 15px 25px;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-    margin-top: 15px;
-}/* Mobile Responsive Design */
+  .tagline {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
 
-@media (max-width: 600px) {
+  section {
+    padding: 45px 5%;
+  }
 
-    nav {
-        padding: 15px 5px;
-    }
+  section h2 {
+    font-size: 26px;
+  }
 
-    nav a {
-        display: inline-block;
-        margin: 8px;
-        font-size: 15px;
-    }
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
 
-    section {
-        padding: 25px 15px;
-        margin: 12px;
-    }
-
-    h1 {
-        font-size: 28px;
-    }
-
-    p {
-        font-size: 16px;
-    }
-
-    .skill-card {
-        display: block;
-        margin: 10px 0;
-    }
-}
-
-.whatsapp-btn:hover {
-    background-color: #128C7E;
-}
-    .project-card {
-    background-color: #eaf4ff;
-    padding: 20px;
-    margin: 15px 0;
-    border-radius: 12px;
-    border-left: 5px solid #0077b6;
-}
-
-.project-card h3 {
-    color: #14213d;
-}
-
-.project-card p {
-    color: #444;
 }
